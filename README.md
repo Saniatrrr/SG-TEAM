@@ -17,7 +17,7 @@ pip install git
 
 git clone https://github.com/Saniatrrr/SG-TEAM
 
-cd SG-FB-Cloner
+cd SG-TEAM
 
 ls 
 
