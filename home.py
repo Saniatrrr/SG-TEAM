@@ -127,7 +127,8 @@ class Main:
 		print("%s [%s5%s]%s CRACK FROM EMAILS %s(PRO)"%(G,R,G,Y,G))
 		print("%s [%s6%s]%s CRACK RANDOM FB ID Custom %s(PRO) V1"%(G,R,G,Y,G))
 		print("%s [%s7%s]%s CRACK FILE CLONING[BEST METHOD FOR OK ID] %s(PRO) V1"%(G,R,G,Y,G))
-		print("%s [%s8%s]%s  Age DIRERMINER.............%s(PRO) V1"%(G,R,G,Y,G))
+		print("%s [%s8%s]%s AGE DIRERMINER.............%s(PRO) V1"%(G,R,G,Y,G))
+                print("%s [%s00%s]%s CHACKING UPDATE....%s(FREE)"%(G,R,G,Y,B))
 		print(GET)
 		hoga = input("\n%s [?] CHOICE : "%(B))
 		if hoga in ["", " "]:
@@ -177,6 +178,8 @@ class Main:
 				
 		elif hoga in ["P", "p"]:
 			notice()
+                elif hoga in ["0", "00"]:
+			os.system("git pull")
 			
 		else:
 			Main()
