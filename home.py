@@ -1,5 +1,4 @@
-# Decompile by : Hamid Meer'MAHABUB 
-# Time Succes decompile : 2022-03-07 00:21:42.178972 
+# Do not edit my script
 
 W = '\033[97;1m' 
 R = '\033[91;1m' 
@@ -116,7 +115,7 @@ class Main:
 		os.system("clear")
 		
 		print (logo)
-		print("%s [%s•%s] %sTOOL NAME : %sOld Fb Cracker"%(G,R,G,B,G))
+		print("%s [%s•%s] %sTOOL NAME : %sSG__TEAM__"%(G,R,G,B,G))
 		print("%s [%s•%s] %sVERSION   : %s1.0"%(G,R,G,B,G))
 		print("%s [%s•%s] %sYOUR KEY  : %s%s"%(G,R,G,B,G,key))
 		print("%s [%s•%s] %sSTATUS    : %s"%(G,R,G,B,stat)) 
