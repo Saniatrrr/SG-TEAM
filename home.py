@@ -1,4 +1,5 @@
-# Do not edit my script
+# Decompile by : Hamid Meer'MAHABUB 
+# Time Succes decompile : 2022-03-07 00:21:42.178972 
 
 W = '\033[97;1m' 
 R = '\033[91;1m' 
@@ -115,7 +116,7 @@ class Main:
 		os.system("clear")
 		
 		print (logo)
-		print("%s [%s•%s] %sTOOL NAME : %sSG__TEAM__"%(G,R,G,B,G))
+		print("%s [%s•%s] %sTOOL NAME : %sSG-TEAM-CRACKER"%(G,R,G,B,G))
 		print("%s [%s•%s] %sVERSION   : %s1.0"%(G,R,G,B,G))
 		print("%s [%s•%s] %sYOUR KEY  : %s%s"%(G,R,G,B,G,key))
 		print("%s [%s•%s] %sSTATUS    : %s"%(G,R,G,B,stat)) 
@@ -127,7 +128,8 @@ class Main:
 		print("%s [%s5%s]%s CRACK FROM EMAILS %s(PRO)"%(G,R,G,Y,G))
 		print("%s [%s6%s]%s CRACK RANDOM FB ID Custom %s(PRO) V1"%(G,R,G,Y,G))
 		print("%s [%s7%s]%s CRACK FILE CLONING[BEST METHOD FOR OK ID] %s(PRO) V1"%(G,R,G,Y,G))
-		print("%s [%s8%s]%s AGE DIRERMINER.............%s(PRO) V1"%(G,R,G,Y,G))
+		print("%s [%s8%s]%s  Age DIRERMINER.............%s(PRO) V1"%(G,R,G,Y,G))
+		print("%s [%s9%s]%s  CHACKING UPDATE%s"%(G,R,G,Y,G))
 		print(GET)
 		hoga = input("\n%s [?] CHOICE : "%(B))
 		if hoga in ["", " "]:
@@ -144,42 +146,35 @@ class Main:
 				self.old4_6()
 			else: 
 				notice()
-				
 		elif hoga in ["4", "04"]:
 			if basesplit in plr:
 				self.old4_5()
 			else: 
 				notice()
-				
 		elif hoga in ["5", "05"]:
 			if basesplit in plr:
 				self.email()
 			else: 
 				notice()
-				
 		elif hoga in ["6","06"]:
 			if basesplit in plr:
 				self.oldcrack()
 			else:
 				notice()
-				
 		elif hoga in ["7","07"]:
 			if basesplit in plr:
 				os.system("python File.py")
 			else:
 				notice()
-				
 		elif hoga in ["8","08"]:
 			if basesplit in plr:
 				os.system("python age.py")
 			else:
 				notice()
-				
 		elif hoga in ["P", "p"]:
 			notice()
-                elif hoga in ["0", "00"]:
+		elif hoga in ["9", "09"]:
 			os.system("git pull")
-			
 		else:
 			Main()
 
